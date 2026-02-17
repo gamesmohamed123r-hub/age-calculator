@@ -1,0 +1,96 @@
+                   /*custimize the background*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*-----------------------------------------------------------*/
+body{
+    background: linear-gradient(to bottom, green,yellow);
+    min-height: 100vh;
+}
+/*--------------------------header---------------------------*/
+.firsteb1{
+    color: whitesmoke;
+    text-shadow: 5px 5px 8px black;
+}
+.fottt{
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px black;
+}
+
+
+
+/*------------------------------responsive for the small devices-------------------------*/
+
+
+@media (max-width: 575.98px) {
+    /* Stack footer elements vertically on small screens */
+    footer .row {
+        flex-direction: column !important; /* Stack h2 and h3 group */
+        text-align: center !important; /* Center text */
+    }
+    
+    footer .col-4 {
+        margin-bottom: 1rem; /* Space below h2 */
+    }
+    
+    /* Header: Reduce top margin and font size for mobile */
+    .firsteb1 {
+        margin-top: 50px !important; /* Smaller top margin */
+        font-size: 1.5rem !important; /* Smaller font */
+    }
+    
+    /* Form inputs: Stack vertically and center */
+    .d-flex.justify-content-center {
+        flex-direction: column !important; /* Stack inputs */
+        align-items: center !important; /* Center them */
+    }
+    
+    .m-2 {
+        margin: 0.5rem !important; /* Adjust spacing between stacked inputs */
+    }
+    
+    /* Buttons: Full-width and stacked */
+    .text-center .btn {
+        width: 100% !important; /* Full-width buttons */
+        margin: 0.5rem 0 !important; /* Vertical spacing */
+    }
+    
+    /* Container padding for small screens */
+    .container {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+}
+
+/* Tablet responsiveness (576px - 991px) */
+@media (min-width: 576px) and (max-width: 991.98px) {
+    /* Footer: Keep h3 close but allow slight spread */
+    footer .row {
+        gap: 1rem; /* Slightly larger gap on tablets */
+    }
+    
+    /* Inputs: Wrap if too wide */
+    .d-flex.justify-content-center {
+        flex-wrap: wrap; /* Allow wrapping */
+    }
+    
+    /* Buttons: Center and space */
+    .text-center .btn {
+        margin: 0.5rem !important;
+    }
+}
+
+/* Desktop (≥992px): Use Bootstrap defaults, but ensure centering */
+@media (min-width: 992px) {
+    /* Footer: Tight gaps */
+    footer .row {
+        gap: 0.5rem;
+    }
+    
+    /* Ensure form stays centered */
+    .d-flex.justify-content-center {
+        justify-content: center !important;
+    }
+}

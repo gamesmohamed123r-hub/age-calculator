@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>age calculator</title>
+                    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+                    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+                    <!-- animate wow css -->
+    <link rel="stylesheet" href="css/animate.min.css">
+                    <!-- link  main css -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+        
+                                         <!---header first elements--------->
+<header class="first-block">
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1  class="mb-3 firsteb1 text-center wow animate__bounceIn" style="margin-top: 90px;">enter your birth info to calculate</h1>
+        </div>
+    </div>
+                  <!---------second elements------------>
+    <div class="row">
+        <div class="col-md-12">
+            <form class="mt-4 d-flex justify-content-center wow animate__animated animate__fadeInLeft" data-wow-delay="0.2s">
+                <input 
+                 type="number"
+                 name="day"
+                 class="m-2"
+                 id="day"
+                 placeholder="DDD"
+                 min="1"
+                 max="31">
+<!-- -------------------------------------------------------- -->
+                <input 
+                 type="number"
+                 name="month"
+                 class="m-2"
+                 id="month"
+                 placeholder="MMM"
+                 min="1"
+                 max="12">
+<!------------------------------------------------------------>
+                 <input 
+                 type="number"
+                 name="year"
+                 class="m-2"
+                 id="year"
+                 placeholder="YYY"
+                 min="1"
+                 max="9999"> <br>
+            </form>
+<!-------------------third elements-------------------------->
+<div class="row">
+    <div class="col-md-12 text-center wow animate__animated animate__fadeInRight" data-wow-delay="0.1s">
+        <input
+           type="button"
+           value="calculate"
+           id="calc"
+           class="btn btn-warning mt-4 m-2"
+        >
+          <input            
+           type="button"
+           value="remove"
+           id="remo"
+           class="btn btn-danger mt-4 m-2"
+           >
+    </div>
+</div>  
+        </div>
+    </div>
+</div>
+</header>
+                                        <!-------- second elements --------->
+<footer class="fottt">
+      <div class="container text-center">
+        <div class="row justify-content-start mt-5">
+            <div class="col-4">
+                <h2>You lived exactly:</h2>
+            </div>
+              <div class="col-1 align-self-center">
+                     <h3 id="a">--</h3>
+                </div>
+              <div class="col-1 align-self-center">
+                    <h3 id="b">--</h3>
+                 </div>
+                  <div class="col-1 align-self-center">
+                   <h3 id="c">--</h3>
+                 </div>
+        </div>
+      </div>
+</footer>
+
+
+                      <!-- js bootstrap jquery -->
+    <script src="/js/jquery.min.js"></script>
+                      <!-- js bootstrap main-->
+    <script src="/js/bootstrap.bundle.min.js"></script>
+                      <!-- js wow min animate -->
+    <script src="/js/wow.min.js"></script>
+                      <!-- activate js wow-->
+     <script>
+     new WOW().init();
+     </script>
+                         <!-- main js -->
+    <script src="/js/main.js"></script>                          
+</body>
+</html>
